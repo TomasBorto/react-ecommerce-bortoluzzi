@@ -1,20 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './navbar.css'
-import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Navbar from './components/Navbar'
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import EffectExample from './components/EffectExample';
+import { useState } from 'react';
+import Animation from './components/Animation';
 
 function App() {
+  const [show, setShow] = useState(true)
+
   return (
-    <div className='body'>
-      <div>
-      <Navbar />     
-    </div>
-    <div className='greeting'>
-      <ItemListContainer greeting='Bienvenido a SANA SANA' />
-    </div>
+    <div className="App"> 
+      <Animation />
+        {/* <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer greeting='Todos nuestro products'/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer greeting='Productos filtrados'/>} />
+            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+          </Routes> */}
+          {/* <Footer /> */}
+        {/* </BrowserRouter> */}
+        {/* <button onClick={() => {setShow(!show)}}>show/hide</button>
+          { show && <EffectExample /> } */}
     </div>
   );
 }
