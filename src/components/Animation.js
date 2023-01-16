@@ -29,7 +29,7 @@ const Animation = () => {
             <div 
                 ref={divRef}
                 // id="scroll-color" 
-                style={{ height: '180vh', background}}>
+                style={{ height: '10vh', background}}>
                 <h1>Animation Scroll</h1>
             </div>
         </div>
