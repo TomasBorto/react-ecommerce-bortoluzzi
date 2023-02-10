@@ -1,12 +1,13 @@
+import { memo } from 'react'
 import './ItemList.css'
 import Item from '../Item/Item'
 
-const ItemList = ({products }) => {
+const ItemList = ({ products }) => {
     return(
-        <div className='ListGroup' onClick={() => console.log('hice click en itemlist')}>
+        <div className='ListGroup'>
             {products.map(prod => <Item key={prod.id} {...prod} />)}
         </div>    
     )
 }
 
-export default ItemList
+export default memo(ItemList)

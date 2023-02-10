@@ -3,8 +3,13 @@
     background: transparent;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
-    background: wheat;
+    height: 100px;
+    background: #01a7ad;
+  }
+
+  .LogoImg {
+    width: 100px;
+    padding: 10px;
   }
   
   .Categories {
@@ -14,15 +19,14 @@
   }
   
   .Option {
-    /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
     margin: 0 50px;
-    /* TODO */
-    width: auto;
+    width: 75px;
+    height: 50px;
     padding: 12px;
-    font-size: 8px;
-    background: #8C30F5;
+    font-size: 12px;
+    background: #ffcc01;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -32,7 +36,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #FFFFFF;
+    color: black;
     border: none;
     border-style: none;
     cursor: pointer;
@@ -40,15 +44,13 @@
   }
   
   .ActiveOption {
-    /* color: #8C30F5; */
     text-decoration: none;
     border-radius: 25;
     margin: 0 50px;
-    /* TODO */
     width: auto;
     padding: 12px;
     font-size: 15px;
-    background: blue;
+    background: darkorchid;
     border-radius: 8px;
     flex: none;
     display: flex;
